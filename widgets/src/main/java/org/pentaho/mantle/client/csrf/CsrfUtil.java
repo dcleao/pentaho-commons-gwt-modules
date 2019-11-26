@@ -37,7 +37,7 @@ public class CsrfUtil {
    */
   public static final native void getCsrfToken( String url, final AsyncCallback<JsCsrfToken> callback ) /*-{
 
-    $wnd.require(["pentaho/csrf/service"], function(csrfService) {
+    $wnd.require(["common-ui/util/pentaho-csrf"], function(csrfService) {
       var token = csrfService.getToken(url);
 
       callback.@com.google.gwt.user.client.rpc.AsyncCallback::onSuccess(Ljava/lang/Object;)(token);
